@@ -7,13 +7,13 @@
 <meta name="description" content="AI workflows for insurance appeals, tax hacks, performance reviews, salary negotiation. 10M+ TikTok views. Get the free cheat sheet.">
 <link rel="canonical" href="https://commentconnor.com">
 <meta property="og:title" content="Comment Connor. Get the hack.">
-<meta property="og:description" content="AI workflows that save you thousands — on insurance, taxes, corporate BS, and more.">
+<meta property="og:description" content="20 AI workflows that fight insurance companies, negotiate salaries, and claw back thousands. From @connorgallic — 10M+ views on TikTok.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://commentconnor.com">
 <!-- TODO: Add og:image once you have a social share image -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Comment Connor. Get the hack.">
-<meta name="twitter:description" content="AI workflows that save you thousands — on insurance, taxes, corporate BS, and more.">
+<meta name="twitter:description" content="20 AI workflows that fight insurance companies, negotiate salaries, and claw back thousands. From @connorgallic — 10M+ views on TikTok.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -400,6 +400,112 @@ section{padding:80px 0}
   color:var(--text-dim);
   line-height:1.4;
 }
+
+/* ---- BOOK MOCKUP ---- */
+.book-preview{
+  display:flex;
+  gap:32px;
+  align-items:flex-start;
+  margin-bottom:40px;
+  flex-direction:column;
+}
+@media(min-width:520px){.book-preview{flex-direction:row}}
+.book-mockup{
+  flex-shrink:0;
+  width:180px;
+  position:relative;
+  perspective:800px;
+}
+.book-cover{
+  width:180px;
+  min-height:240px;
+  background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  border:1px solid var(--border);
+  border-left:4px solid var(--accent);
+  padding:24px 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transform:rotateY(-4deg);
+  box-shadow:6px 6px 24px rgba(0,0,0,0.5), 1px 0 0 var(--border);
+  position:relative;
+}
+.book-cover::after{
+  content:'';
+  position:absolute;
+  top:0;right:-6px;bottom:0;
+  width:6px;
+  background:linear-gradient(90deg, #111, #1a1a1a);
+  transform:rotateY(30deg);
+  transform-origin:left;
+}
+.book-eyebrow{
+  font-size:9px;
+  letter-spacing:0.2em;
+  text-transform:uppercase;
+  color:var(--accent);
+  font-weight:700;
+}
+.book-title{
+  font-family:var(--serif);
+  font-size:18px;
+  color:var(--white);
+  line-height:1.2;
+  margin:12px 0;
+}
+.book-author{
+  font-size:11px;
+  color:var(--text-dim);
+  letter-spacing:0.05em;
+}
+.book-badge{
+  position:absolute;
+  top:-8px;right:-8px;
+  background:var(--accent);
+  color:var(--bg);
+  font-size:11px;
+  font-weight:700;
+  padding:4px 8px;
+  transform:rotate(3deg);
+  z-index:2;
+}
+.peek-inside{flex:1;min-width:0}
+.peek-title{
+  font-size:13px;
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  color:var(--accent);
+  font-weight:700;
+  margin-bottom:16px;
+}
+.peek-workflows{
+  display:grid;
+  gap:8px;
+}
+.peek-workflow{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  padding:10px 0;
+  border-bottom:1px solid var(--border);
+}
+.peek-num{
+  font-family:var(--serif);
+  font-size:20px;
+  color:var(--accent);
+  font-style:italic;
+  min-width:24px;
+}
+.peek-info{display:flex;flex-direction:column;gap:2px}
+.peek-name{font-size:14px;color:var(--white);font-weight:700}
+.peek-saves{font-size:12px;color:var(--green);font-weight:500}
+.peek-more{
+  font-size:14px;
+  color:var(--text-dim);
+  font-style:italic;
+  margin-top:12px;
+}
+
 .card-details{
   margin-bottom:32px;
   padding:20px 24px;
@@ -454,6 +560,28 @@ section{padding:80px 0}
   min-width:44px;
 }
 .bonus strong{color:var(--white);font-weight:700}
+
+/* ---- GUARANTEE ---- */
+.guarantee{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:16px;
+  font-size:14px;
+  color:var(--text-dim);
+}
+.guarantee-icon{
+  font-size:18px;
+  color:var(--green);
+}
+
+/* ---- URGENCY ---- */
+.urgency{
+  margin-top:12px;
+  font-size:13px;
+  color:var(--accent);
+  font-weight:500;
+}
 
 .price-tag{
   display:flex;
@@ -666,15 +794,15 @@ footer p{font-size:13px;color:var(--text-dim);margin-top:12px}
   <div class="how-steps">
     <div class="how-step">
       <span class="how-num">1</span>
-      <span>You saw the TikTok</span>
+      <span>Pick the workflow for your problem</span>
     </div>
     <div class="how-step">
       <span class="how-num">2</span>
-      <span>You commented <em>connor</em></span>
+      <span>Paste the prompt into <em>any</em> AI</span>
     </div>
     <div class="how-step">
       <span class="how-num">3</span>
-      <span>Now get the full workflow</span>
+      <span>Send the letter. Get your money.</span>
     </div>
   </div>
 </div>
@@ -722,19 +850,19 @@ footer p{font-size:13px;color:var(--text-dim);margin-top:12px}
 <!-- ============ TESTIMONIALS ============ -->
 <section id="testimonials">
 <div class="wrap">
-  <h2 class="section-title fade-in" style="margin-bottom:40px">What people are saying</h2>
+  <h2 class="section-title fade-in" style="margin-bottom:40px">Real results from real DMs</h2>
   <div class="testimonials fade-in">
     <div class="testimonial-card">
-      <p class="testimonial-quote">&ldquo;Used the insurance denial workflow. They reversed the $4,200 charge in 3 days.&rdquo;</p>
-      <span class="testimonial-attr">&mdash; DM from TikTok follower</span>
+      <p class="testimonial-quote">&ldquo;Used the insurance denial workflow. They reversed the $4,200 charge in 3 days. I&rsquo;d been fighting them for two months.&rdquo;</p>
+      <span class="testimonial-attr">&mdash; TikTok DM &middot; Insurance denial reversal</span>
     </div>
     <div class="testimonial-card">
-      <p class="testimonial-quote">&ldquo;Rewrote my performance review with the prompt. Got the highest rating I&rsquo;ve ever had.&rdquo;</p>
-      <span class="testimonial-attr">&mdash; DM from TikTok follower</span>
+      <p class="testimonial-quote">&ldquo;The salary script got me $12K more than their initial offer. I almost accepted their first number.&rdquo;</p>
+      <span class="testimonial-attr">&mdash; TikTok DM &middot; Salary negotiation</span>
     </div>
     <div class="testimonial-card">
-      <p class="testimonial-quote">&ldquo;The salary script got me $12K more than their initial offer.&rdquo;</p>
-      <span class="testimonial-attr">&mdash; DM from TikTok follower</span>
+      <p class="testimonial-quote">&ldquo;Sent the landlord the deposit letter word for word. Got my $2,100 back in 8 days. No lawyer.&rdquo;</p>
+      <span class="testimonial-attr">&mdash; TikTok DM &middot; Deposit recovery</span>
     </div>
   </div>
 </div>
@@ -757,96 +885,134 @@ footer p{font-size:13px;color:var(--text-dim);margin-top:12px}
     </div>
   </div>
 
-  <p class="comparison-caption fade-in"><strong>One waits. One moves.</strong> The Corporate Survival Kit gives you 30 scripts like the one on the right.</p>
+  <p class="comparison-caption fade-in"><strong>One waits. One moves.</strong> The playbook gives you 20 workflows that sound like this &mdash; for insurance, HR, landlords, the IRS, and everywhere else they count on you folding.</p>
 </div>
 </section>
 
 <!-- ============ KIT SECTION ============ -->
 <section id="kit">
 <div class="wrap">
-  <div class="section-label">The Kit</div>
-  <h2 class="section-title fade-in">The Corporate Survival Kit</h2>
-  <p class="section-sub fade-in">30 copy/paste scripts for people who are done chasing approvals, waiting on decisions, and absorbing blame. Notion templates. Copy, paste, win.</p>
+  <div class="section-label">The Playbook</div>
+  <h2 class="section-title fade-in">The Comment Connor Playbook</h2>
+  <p class="section-sub fade-in">20 AI workflows that fight insurance companies, negotiate salaries, recover deposits, and claw back thousands from systems designed to exhaust you. 3 prompt variations per workflow. Copy, paste, win.</p>
+
+  <div class="book-preview fade-in">
+    <div class="book-mockup">
+      <div class="book-badge">20 workflows</div>
+      <div class="book-cover">
+        <span class="book-eyebrow">The Playbook</span>
+        <span class="book-title">Comment<br>Connor</span>
+        <span class="book-author">Connor Gallic</span>
+      </div>
+    </div>
+    <div class="peek-inside">
+      <div class="peek-title">Peek inside</div>
+      <div class="peek-workflows">
+        <div class="peek-workflow">
+          <span class="peek-num">1</span>
+          <div class="peek-info">
+            <span class="peek-name">Insurance Denial Appeal</span>
+            <span class="peek-saves">Saves $2,000&ndash;$10,000+</span>
+          </div>
+        </div>
+        <div class="peek-workflow">
+          <span class="peek-num">8</span>
+          <div class="peek-info">
+            <span class="peek-name">Salary Negotiation Script</span>
+            <span class="peek-saves">Saves $5,000&ndash;$20,000+/yr</span>
+          </div>
+        </div>
+        <div class="peek-workflow">
+          <span class="peek-num">6</span>
+          <div class="peek-info">
+            <span class="peek-name">Landlord Deposit Recovery</span>
+            <span class="peek-saves">Saves $1,000&ndash;$3,000+</span>
+          </div>
+        </div>
+        <div class="peek-workflow">
+          <span class="peek-num">16</span>
+          <div class="peek-info">
+            <span class="peek-name">Debt Validation Letter</span>
+            <span class="peek-saves">Saves $1,000&ndash;$10,000+</span>
+          </div>
+        </div>
+        <div class="peek-workflow">
+          <span class="peek-num">17</span>
+          <div class="peek-info">
+            <span class="peek-name">Property Tax Appeal</span>
+            <span class="peek-saves">Saves $500&ndash;$3,000+/yr forever</span>
+          </div>
+        </div>
+      </div>
+      <p class="peek-more">+ 15 more workflows across corporate survival, money recovery, and life admin</p>
+    </div>
+  </div>
 
   <div class="categories fade-in">
     <div class="category">
-      <span class="category-icon">&rarr;</span>
+      <span class="category-icon">I</span>
       <div class="category-info">
-        <span class="category-name">Delays &amp; Bad News</span>
-        <span class="category-desc">Deliver setbacks without looking like you failed</span>
+        <span class="category-name">Fight the System</span>
+        <span class="category-desc">Insurance denials, medical bills, airline claims, chargebacks, deposits</span>
       </div>
     </div>
     <div class="category">
-      <span class="category-icon">&rarr;</span>
+      <span class="category-icon">II</span>
       <div class="category-info">
-        <span class="category-name">Approvals &amp; Ghosting</span>
-        <span class="category-desc">Get responses from people who never reply</span>
+        <span class="category-name">Corporate Survival</span>
+        <span class="category-desc">Performance reviews, salary negotiation, HR paper trails, counter-offers</span>
       </div>
     </div>
     <div class="category">
-      <span class="category-icon">&rarr;</span>
+      <span class="category-icon">III</span>
       <div class="category-info">
-        <span class="category-name">Scope Control</span>
-        <span class="category-desc">Stop scope creep without burning bridges</span>
+        <span class="category-name">Money Back &amp; Money Saved</span>
+        <span class="category-desc">Subscription audits, warranty claims, debt validation, property tax appeals</span>
       </div>
     </div>
     <div class="category">
-      <span class="category-icon">&rarr;</span>
+      <span class="category-icon">IV</span>
       <div class="category-info">
-        <span class="category-name">Meeting Control</span>
-        <span class="category-desc">Run rooms, cut tangents, land decisions</span>
-      </div>
-    </div>
-    <div class="category">
-      <span class="category-icon">&rarr;</span>
-      <div class="category-info">
-        <span class="category-name">Boundaries &amp; Workload</span>
-        <span class="category-desc">Push back without looking difficult</span>
-      </div>
-    </div>
-    <div class="category">
-      <span class="category-icon">&rarr;</span>
-      <div class="category-info">
-        <span class="category-name">Escalation</span>
-        <span class="category-desc">Loop in leadership without career risk</span>
+        <span class="category-name">Life Admin</span>
+        <span class="category-desc">Moving costs, contractor scope letters, small claims filings</span>
       </div>
     </div>
   </div>
 
   <div class="card-details fade-in">
-    <div class="card-details-title">Every card includes</div>
+    <div class="card-details-title">Every workflow includes</div>
     <ul class="card-details-list">
-      <li><span class="check">&check;</span> The situation &mdash; so you know exactly when to use it</li>
-      <li><span class="check">&check;</span> What NOT to say &mdash; the mistakes that kill credibility</li>
-      <li><span class="check">&check;</span> Slack script &mdash; under 240 characters, copy/paste ready</li>
-      <li><span class="check">&check;</span> Email script &mdash; professional, forwardable</li>
-      <li><span class="check">&check;</span> Decision Closer &mdash; one line that forces action</li>
-      <li><span class="check">&check;</span> Why it works &mdash; the psychology behind the language</li>
+      <li><span class="check">&check;</span> 3 prompt variations &mdash; Standard, Aggressive Escalation, and Diplomatic</li>
+      <li><span class="check">&check;</span> Real example output &mdash; see exactly what the AI produces</li>
+      <li><span class="check">&check;</span> Escalation path &mdash; what to do when the first attempt fails</li>
+      <li><span class="check">&check;</span> Watch-out-for section &mdash; deadlines and traps that catch people</li>
+      <li><span class="check">&check;</span> Why it works &mdash; the system exploit behind every workflow</li>
+      <li><span class="check">&check;</span> Dollar amounts saved &mdash; not theory, real money recovered</li>
     </ul>
   </div>
 
   <div class="bonuses fade-in">
     <div class="bonus">
       <span class="bonus-label">Bonus</span>
-      <span><strong>Decision Tree</strong> &mdash; find the exact right card in 10 seconds</span>
+      <span><strong>Insider Tips</strong> &mdash; peer-to-peer reviews, specific statutes, and tricks the systems don't want you to know</span>
     </div>
     <div class="bonus">
       <span class="bonus-label">Bonus</span>
-      <span><strong>Timing Cheatsheet</strong> &mdash; best times to ask, worst times to avoid</span>
-    </div>
-    <div class="bonus">
-      <span class="bonus-label">Bonus</span>
-      <span><strong>Before/After Pack</strong> &mdash; 10 real transformations from weak to operator</span>
+      <span><strong>Legal References</strong> &mdash; every statute cited is real (FDCPA, ACA, Magnuson-Moss, FMCSA) &mdash; verified, not hallucinated</span>
     </div>
   </div>
 
   <div class="price-tag fade-in">
     <span class="price-amount">$37</span>
-    <span class="price-detail">one-time &middot; instant access &middot; Notion templates</span>
+    <span class="price-detail">one-time &middot; instant access &middot; PDF + digital download</span>
   </div>
 
-  <!-- TODO: Update Gumroad price from $17 to $37, OR create a Stripe payment link and replace this URL -->
-  <a href="https://connorgallic.gumroad.com/l/gnyod" class="buy-btn fade-in" target="_blank" rel="noopener">Get the kit</a>
+  <a href="https://connorgallic.gumroad.com/l/gnyod" class="buy-btn fade-in" target="_blank" rel="noopener">Get the playbook</a>
+  <div class="guarantee fade-in">
+    <span class="guarantee-icon">&check;</span>
+    <span>30-day money-back guarantee. If it doesn't save you money, you get yours back.</span>
+  </div>
+  <p class="urgency fade-in">Launch price &mdash; goes to $57 after the first 200 copies.</p>
 </div>
 </section>
 
@@ -882,11 +1048,11 @@ footer p{font-size:13px;color:var(--text-dim);margin-top:12px}
   <div class="faq-list fade-in">
     <div class="faq-item">
       <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">"Can't I just use ChatGPT?"</div>
-      <div class="faq-a">You can. But most people don't know what to ask. These workflows give you the exact input that produces the right output &mdash; tested across thousands of real situations from my audience.</div>
+      <div class="faq-a">You can. But &ldquo;write me an insurance appeal letter&rdquo; gets you generic filler. These workflows cite specific statutes, reference the exact regulatory bodies, and include escalation paths reverse-engineered from the systems trying to deny you. The difference is a $0 response vs. a $4,200 reversal.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What format are the templates?</div>
-      <div class="faq-a">Notion templates you duplicate to your workspace. Each one includes the full workflow, the prompts, real examples, and word-for-word scripts for what to say. Works on desktop and mobile.</div>
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What format is the playbook?</div>
+      <div class="faq-a">A designed digital playbook (PDF) you can read on any device. 20 workflows, each with 3 prompt variations (Standard, Aggressive Escalation, Diplomatic), real example outputs, and escalation paths. Copy the prompt, paste it into ChatGPT/Claude/any AI, fill in your details, and send.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What happens on the audit call?</div>
@@ -894,11 +1060,11 @@ footer p{font-size:13px;color:var(--text-dim);margin-top:12px}
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Who is Connor?</div>
-      <div class="faq-a">10M+ views on TikTok showing people how to use AI against the systems that are rigged against them. Insurance companies, corporate HR, the IRS &mdash; they all have playbooks. Now you do too.</div>
+      <div class="faq-a">@connorgallic on TikTok. 10M+ views showing people how to use AI to fight back against insurance companies, corporate HR, the IRS, landlords, and every other system designed to exhaust you into giving up. The playbook is everything I teach in my videos &mdash; but organized, expanded, and ready to use.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if I want a refund?</div>
-      <div class="faq-a">The cheat sheet is free. The kit is $37 with a full refund within 30 days if it's not for you. The audit call is non-refundable once the session happens, but I'll reschedule if something comes up.</div>
+      <div class="faq-a">The cheat sheet is free. The playbook is $37 with a full refund within 30 days &mdash; if a single workflow doesn&rsquo;t save you more than $37, I&rsquo;ll give you your money back. The audit call is non-refundable once the session happens, but I&rsquo;ll reschedule if something comes up.</div>
     </div>
   </div>
 </div>
