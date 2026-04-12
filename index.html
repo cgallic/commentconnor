@@ -931,9 +931,7 @@ footer p{font-size:13px;color:var(--text-dim);margin-top:12px}
 </div>
 
 <script>
-// ---- Loops email form handler ----
-// TODO: Replace PLACEHOLDER_FORM_ID with your Loops form ID
-// Find it at: https://app.loops.so → Forms → your form → Get embed code → grab the ID
+// ---- Email form → /api/subscribe (Vercel serverless → Loops API) ----
 async function handleSubmit(e, formId) {
   e.preventDefault();
   var form = e.target;
@@ -943,7 +941,7 @@ async function handleSubmit(e, formId) {
   btn.textContent = 'Sending...';
   btn.disabled = true;
   try {
-    var res = await fetch('https://app.loops.so/api/newsletter-form/PLACEHOLDER_FORM_ID', {
+    var res = await fetch('/api/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: email })
