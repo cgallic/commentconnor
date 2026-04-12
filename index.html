@@ -6,6 +6,7 @@
 <title>Comment Connor — AI workflows that save you thousands</title>
 <meta name="description" content="AI workflows for insurance appeals, tax hacks, performance reviews, salary negotiation. 10M+ TikTok views. Get the free cheat sheet.">
 <link rel="canonical" href="https://commentconnor.com">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23050505'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='serif' font-style='italic' fill='%23e8ff47'>C</text></svg>">
 <meta property="og:title" content="Comment Connor. Get the hack.">
 <meta property="og:description" content="20 AI workflows that fight insurance companies, negotiate salaries, and claw back thousands. From @connorgallic — 10M+ views on TikTok.">
 <meta property="og:type" content="website">
@@ -24,6 +25,17 @@
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('js',new Date());gtag('config','G-Q35SM4NFF0');
 </script>
+
+<!-- Microsoft Clarity — free heatmaps & session recordings -->
+<!-- TODO: Replace YOUR_CLARITY_ID with your project ID from clarity.microsoft.com -->
+<!--
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window,document,"clarity","script","YOUR_CLARITY_ID");
+</script>
+-->
 
 <!-- TODO: Add TikTok pixel if you want conversion tracking -->
 <!--
@@ -290,12 +302,46 @@ section{padding:80px 0}
 }
 .form-success{
   display:none;
+  max-width:480px;
+}
+.form-success-msg{
   padding:16px 20px;
   background:var(--accent);
   color:var(--bg);
   font-weight:700;
   font-size:15px;
+  margin-bottom:16px;
+}
+.upsell{
+  padding:20px;
+  background:var(--surface);
+  border:1px solid var(--border);
   max-width:480px;
+}
+.upsell-text{
+  font-size:15px;
+  color:var(--text);
+  line-height:1.5;
+  margin-bottom:16px;
+}
+.upsell-text strong{color:var(--white)}
+.upsell-cta{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:var(--white);
+  color:var(--bg);
+  font-weight:700;
+  font-size:14px;
+  padding:12px 24px;
+  text-decoration:none;
+  transition:opacity .15s;
+}
+.upsell-cta:hover{opacity:0.9}
+.upsell-price{
+  font-size:13px;
+  color:var(--text-dim);
+  margin-top:8px;
 }
 
 /* ---- TESTIMONIALS ---- */
@@ -323,6 +369,78 @@ section{padding:80px 0}
   font-size:12px;
   color:var(--text-dim);
   letter-spacing:0.05em;
+}
+
+/* ---- CONNOR IDENTITY ---- */
+.connor-section{
+  padding:60px 0;
+  border-bottom:1px solid var(--border);
+}
+.connor-inner{
+  display:flex;
+  gap:24px;
+  align-items:flex-start;
+}
+.connor-avatar{
+  flex-shrink:0;
+  width:56px;
+  height:56px;
+  background:var(--surface);
+  border:2px solid var(--accent);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--serif);
+  font-size:24px;
+  color:var(--accent);
+  font-style:italic;
+}
+.connor-text{font-size:15px;color:var(--text-dim);line-height:1.6}
+.connor-text strong{color:var(--white);font-weight:700}
+.connor-text a{color:var(--accent);text-decoration:none}
+.connor-text a:hover{text-decoration:underline}
+.connor-handle{
+  display:inline-block;
+  margin-top:8px;
+  font-size:13px;
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* ---- ANCHOR PRICING ---- */
+.anchor-pricing{
+  display:grid;
+  gap:2px;
+  background:var(--border);
+  margin-bottom:32px;
+}
+.anchor-row{
+  background:var(--bg);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 20px;
+  font-size:14px;
+}
+.anchor-service{color:var(--text-dim)}
+.anchor-cost{color:var(--red);font-weight:700;text-decoration:line-through}
+.anchor-footer{
+  background:var(--bg);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 20px;
+  font-size:14px;
+  border-top:2px solid var(--accent);
+}
+.anchor-footer .anchor-service{color:var(--white);font-weight:700}
+.anchor-footer .anchor-cost{
+  color:var(--accent);
+  font-weight:700;
+  text-decoration:none;
+  font-size:18px;
 }
 
 /* ---- COMPARISON ---- */
@@ -842,7 +960,14 @@ footer p{font-size:13px;color:var(--text-dim);margin-top:12px}
     <input type="email" name="email" placeholder="your email" required autocomplete="email">
     <button type="submit">Send it free</button>
   </form>
-  <div class="form-success" id="cheatsheet-form-success">Check your inbox. The cheat sheet is on its way.</div>
+  <div class="form-success" id="cheatsheet-form-success">
+    <div class="form-success-msg">Check your inbox. The cheat sheet is on its way.</div>
+    <div class="upsell">
+      <p class="upsell-text">You just got 5 workflows. <strong>The full playbook has 20</strong> &mdash; insurance appeals, salary scripts, deposit recovery, debt validation, and 15 more. Each one with 3 prompt variations and real legal references.</p>
+      <a href="https://connorgallic.gumroad.com/l/gnyod" class="upsell-cta" target="_blank" rel="noopener">Get all 20 workflows &rarr;</a>
+      <p class="upsell-price">$37 one-time &middot; 30-day guarantee</p>
+    </div>
+  </div>
   <p class="form-note fade-in" id="cheatsheet-form-note">No spam. No sequences. Just the cheat sheet.</p>
 </div>
 </section>
@@ -867,6 +992,19 @@ footer p{font-size:13px;color:var(--text-dim);margin-top:12px}
   </div>
 </div>
 </section>
+
+<!-- ============ CONNOR IDENTITY ============ -->
+<div class="connor-section">
+<div class="wrap">
+  <div class="connor-inner fade-in">
+    <div class="connor-avatar">C</div>
+    <div class="connor-text">
+      <strong>I'm Connor.</strong> I make TikToks showing people how to use AI against the systems rigged against them &mdash; insurance companies, corporate HR, the IRS, landlords, debt collectors. <strong>10M+ views.</strong> Every workflow in this playbook started as a TikTok that went viral because people couldn&rsquo;t believe it was this simple.<br>
+      <a href="https://tiktok.com/@connorgallic" target="_blank" rel="noopener" class="connor-handle">@connorgallic on TikTok &rarr;</a>
+    </div>
+  </div>
+</div>
+</div>
 
 <!-- ============ COMPARISON ============ -->
 <section id="comparison">
@@ -1002,6 +1140,25 @@ footer p{font-size:13px;color:var(--text-dim);margin-top:12px}
     </div>
   </div>
 
+  <div class="anchor-pricing fade-in">
+    <div class="anchor-row">
+      <span class="anchor-service">Lawyer for an insurance appeal</span>
+      <span class="anchor-cost">$400/hr</span>
+    </div>
+    <div class="anchor-row">
+      <span class="anchor-service">CPA for a tax review</span>
+      <span class="anchor-cost">$300/hr</span>
+    </div>
+    <div class="anchor-row">
+      <span class="anchor-service">Career coach for salary negotiation</span>
+      <span class="anchor-cost">$200/session</span>
+    </div>
+    <div class="anchor-footer">
+      <span class="anchor-service">20 AI workflows that do all three (and 17 more)</span>
+      <span class="anchor-cost">$37</span>
+    </div>
+  </div>
+
   <div class="price-tag fade-in">
     <span class="price-amount">$37</span>
     <span class="price-detail">one-time &middot; instant access &middot; PDF + digital download</span>
@@ -1073,13 +1230,21 @@ footer p{font-size:13px;color:var(--text-dim);margin-top:12px}
 <!-- ============ FINAL CTA ============ -->
 <section id="final-cta">
 <div class="wrap">
-  <h2 class="section-title fade-in">Still scrolling?</h2>
-  <p class="section-sub fade-in">Start with the free cheat sheet. 5 AI workflows. Your inbox. 30 seconds.</p>
+  <h2 class="section-title fade-in">One workflow could pay for the entire playbook.</h2>
+  <p class="section-sub fade-in">A single insurance appeal, salary negotiation, or deposit recovery can save you hundreds to thousands. Start free, or skip straight to all 20.</p>
   <form class="email-form fade-in" id="bottom-form" onsubmit="handleSubmit(event,'bottom-form')">
     <input type="email" name="email" placeholder="your email" required autocomplete="email">
-    <button type="submit">Send it free</button>
+    <button type="submit">Free cheat sheet</button>
   </form>
-  <div class="form-success" id="bottom-form-success">Check your inbox. The cheat sheet is on its way.</div>
+  <div class="form-success" id="bottom-form-success">
+    <div class="form-success-msg">Check your inbox. The cheat sheet is on its way.</div>
+    <div class="upsell">
+      <p class="upsell-text"><strong>Want all 20 workflows?</strong> The full playbook covers insurance, taxes, salary, HR, landlords, debt collectors, and more. 3 prompt variations each.</p>
+      <a href="https://connorgallic.gumroad.com/l/gnyod" class="upsell-cta" target="_blank" rel="noopener">Get the full playbook &rarr;</a>
+      <p class="upsell-price">$37 one-time &middot; 30-day guarantee</p>
+    </div>
+  </div>
+  <p style="margin-top:16px;font-size:14px" class="fade-in"><a href="https://connorgallic.gumroad.com/l/gnyod" target="_blank" rel="noopener" style="color:var(--text-dim);text-decoration:none">or <strong style="color:var(--white)">get all 20 workflows now &rarr; $37</strong></a></p>
 </div>
 </section>
 
