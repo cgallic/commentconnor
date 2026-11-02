@@ -29,7 +29,8 @@ export default async function handler(req, res) {
     });
 
     const data = await resp.json();
-    return res.status(200).json({ success: data.success !== false });
+    if (!resp.ok || !data || data.success !== true) return res.status(502).json({ success: false });
+    return res.status(200).json({ success: true });
   } catch (err) {
     return res.status(500).json({ success: false });
   }
